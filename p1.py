@@ -9,7 +9,7 @@ print('hello world')
 print('\n2. String Operations in Python:\n')
 a='compare Python with Java'
 print(a.split())
-print('3. Control Flow in Python:\n')
+print('\n3. Control Flow in Python:\n')
 #if
 condiction=10
 if condiction >10:
@@ -34,7 +34,9 @@ print('switch result end\n')
 #for
 for x in range(1,10):
     print(x)
-print('\n4. Class&Inheritance in Python:')
+print('\n4.NULL in Python:')
+special=None
+print('\n5. Class&Inheritance in Python:')
 class Animal():
     def __init__(self,name):
         self.name=name
@@ -45,26 +47,32 @@ class Dog(Animal):
         print('I am '+self.name+',and I can bark')
 dog=Dog('Chiwawa')
 dog.Saysomething()
-print('File I/O in Python')
+print('\n6.File I/O in Python')
 text='This is my first test\n'
 myFile=open('myfile.txt','w')
 myFile.write(text)
 myFile=open('myfile.txt','r')
 print(myFile.read())
 myFile.close()
-print('\n5.Collections in Python')
+print('\n7.Collections in Python')
 aList=[]
 aList.append('a')
 aList.append('b')
 aList.append('c')
 print(aList)
-print('\n6.Numbers in Python')
+print('\n8.Numbers in Python')
 num=100
 num=int(100)
 f=1.01
 f=float(1.01)
 special=None
-print('\n7.Set in Python')
+print('\n9.Tuple in Python')
+aTuple=()
+#aTuple=(5)#Tuple只有一個元素時以逗點結尾
+aTuple=(5,)
+print(aTuple)
+print(aTuple[0])
+print('\n10.Set in Python')
 aSet=set()
 aSet=set('one')
 aSet=set(['one','two','three'])
@@ -83,7 +91,7 @@ print(eSet)
 bSet.add('six')
 print('bSet add six:')
 print(bSet)
-print('\n8.Dictionaries in Python\n')
+print('\n11.Dictionaries in Python\n')
 phoneBook={}
 phoneBook={'Mike':'555-1111',
            'Lucy':'555-2222',
